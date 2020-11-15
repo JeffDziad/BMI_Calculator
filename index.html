@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="BMI">
+        <div class="centered">
+            <h1>BMI Calculator</h1>
+            <h3>Body Mass Index</h3>
+        </div>
+        <div id="inputs">
+            <p style="text-align: center">Please fill out the following information to find your BMI value.</p>
+            <br>
+            <form id="BMIform">
+                <label for="mass" id="poundsLabel">Mass (Pounds): </label>
+                <input type="number" placeholder="Pounds" id="mass" name="mass">
+                <br>
+                <br>
+                <label for="height">Height (Inches): </label>
+                <input type="number" placeholder="Inches" id="height" name="height">
+                <br>
+                <br>
+                <button class="button buttonFunction" id="calculateBMI">Calculate</button>
+            </form>
+        </div>
+        <textarea id="output" cols="60" rows="8" READONLY></textarea>
+    </div>
+<script
+       src="https://code.jquery.com/jquery-3.5.1.js"
+       integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+       crossorigin="anonymous">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.js"></script>
+<script src="scripts.js"></script>
+</body>
+</html>
