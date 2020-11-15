@@ -28,8 +28,8 @@ $(document).ready(function (){
             height:
                 {
                     required: "Please enter a height in inches between 59 and 79.",
-                    min: "Only students between grades 5 and 8 are allowed.",
-                    max: "Only students between grades 5 and 8 are allowed."
+                    min: "Please enter a value larger than 59 inches.",
+                    max: "Please enter a value smaller than 79 inches."
                 }
         };
 
